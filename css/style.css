@@ -325,3 +325,16 @@ main{
 .card ul li{
     display: block;
 }
+
+
+
+
+
+#error{
+    text-align: center;
+    font-size: 40px;
+}
+
+#robot{
+    margin-left: 45%;
+}
