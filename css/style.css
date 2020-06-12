@@ -131,11 +131,11 @@ ul{
     font-size: 17px;
 }
 
-ul li, .background_image{
+section ul li, .background_image{
     position: relative;
 }
 
-ul li{
+section ul li{
     display: inline-block;
     padding-left: 22px;
 }
@@ -156,7 +156,7 @@ ul li{
 }
 
 .line{
-    width: 40%;
+    width: 100%;
     height: 64px;
     background-color: #AFEBE4;
     border-top: 2px solid #33475B;
@@ -322,19 +322,8 @@ main{
     float: none;
 }
 
-.card ul li{
-    display: block;
+.ul_card{
+    
 }
 
 
-
-
-
-#error{
-    text-align: center;
-    font-size: 40px;
-}
-
-#robot{
-    margin-left: 45%;
-}
