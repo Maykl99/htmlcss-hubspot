@@ -580,3 +580,17 @@ footer div > button {
 .footer_row_second > div > ul{
     overflow: hidden;
 }
+
+.footer_row_second hr + div{
+    margin-top: 30px;
+    float: left;
+}
+
+.footer_row_second hr + div > div{
+    color: #ffffff;
+}
+
+.footer_row_second div > ul{
+    float: right;
+    margin-top: 30px;
+}
