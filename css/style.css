@@ -577,6 +577,10 @@ footer div > button {
     clear: both;
 }
 
+.footer_row_second>div{
+    overflow: hidden;
+}
+
 .footer_row_second > div > ul{
     overflow: hidden;
 }
@@ -590,7 +594,17 @@ footer div > button {
     color: #ffffff;
 }
 
-.footer_row_second div > ul{
+.footer_row_second div > .lingue{
+    display: inline-block;
+    float: none;
+    margin-top: 30px;
+}
+
+.footer_row_second > div{
+    text-align: center;
+}
+
+.footer_row_second div > #info_policy{
     float: right;
     margin-top: 30px;
 }
