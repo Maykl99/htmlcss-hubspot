@@ -433,6 +433,10 @@ main{
     margin-bottom: 80px;
 }
 
+#card_bottom_last_first{
+    border-right: 0;
+}
+
 
 /* Fine tabella */
 
@@ -502,7 +506,6 @@ main{
 }
 
 .row_second_col_first div{
-    height: 100px;
     margin-top: 40px;
     float: left;
 }
@@ -521,6 +524,7 @@ main{
 
 .row_second_col_second img{
     width: 200px;
+    margin-top: 20px;
 }
 
 
