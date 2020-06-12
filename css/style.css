@@ -577,6 +577,7 @@ footer{
 
 .footer_col ul li{
     list-style-type: none;
+    padding-top: 12px;
 }
 
 footer div > button {
@@ -585,6 +586,11 @@ footer div > button {
     border-radius: 10px;
     border: none;
     font-weight: 600
+}
+
+
+.footer_row_second{
+    margin-top: 80px;
 }
 
 .footer_row_second ul li{
@@ -616,10 +622,16 @@ footer div > button {
     color: #ffffff;
 }
 
-.footer_row_second div > .lingue{
+.footer_row_second > div > .lingue{
     display: inline-block;
     float: none;
     margin-top: 30px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.footer_row_second > div > .lingue li{
+    margin-left: 20px;
 }
 
 .footer_row_second > div{
@@ -629,4 +641,13 @@ footer div > button {
 .footer_row_second div > #info_policy{
     float: right;
     margin-top: 30px;
+}
+
+#icon{
+    padding-top: 22px;
+}
+
+#icon > span i{
+    margin-right: 15px;
+    font-size: 25px;
 }
