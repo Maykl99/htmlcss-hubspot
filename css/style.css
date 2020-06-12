@@ -503,21 +503,22 @@ main{
     width: 100%;
     height: 40%;
     overflow: hidden;
+    margin-top: 40px;
 }
 
 .row_second_col_first div{
-    margin-top: 40px;
     float: left;
 }
 
 .row_second_col_first div>div{
-    height: 50%;
+    line-height: 60px;
+    height: 60px;
     width: calc(100% / 4);
-    /* overflow: hidden; */
+    line-height: 60px;
 }
 
 .row_second_col_first div>img{
-    height: 17px;
+    height: 15px;
     margin-right: 27px;
     padding-right: 26px;
 }
@@ -527,6 +528,23 @@ main{
     margin-top: 20px;
 }
 
+/* LOghi con dimensioni aumentate */
+
+#small_logo_1 img{
+    height: 20px;
+}
+
+#small_logo_2 img{
+    height: 30px;
+}
+
+#small_logo_3 img{
+    height: 30px;
+}
+
+#small_logo_4 img{
+    height: 41px;
+}
 
 
 
