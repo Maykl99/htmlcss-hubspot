@@ -8,6 +8,82 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 
+/* body>.hover>div{
+    width: 100px;
+    position: absolute;
+    margin-top: 100px;
+    left: -999999999px;
+    display: inline-block;
+    background-color: #F4F9FD;
+    border-radius: 5px;
+    z-index: 1;
+    border: 1px solid #cbd6e2;
+}
+
+body>.hover>div>ul li{
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+body>.hover>div>ul li:last-child{
+    padding-bottom: 10px;
+}
+
+#triangolo{
+        width: 0; height: 0; line-height: 0;
+        border-bottom: 20px solid #F4F9FD;
+        border-left:   20px solid transparent;
+        border-right:  20px solid transparent;
+        position: absolute;
+        top: -20px;
+        left: 55px;
+}
+
+.hover>div:hover #arrow{
+    left: 250px;
+}
+
+section>#arrow{
+    width: 20px;
+    border: aqua;
+    position: absolute;
+    bottom: 32px; 
+    left: 306px;
+    top: 25px;
+    z-index: 3;
+}
+
+.hover{
+    overflow: hidden;
+} */
+
+header *{
+    color: #33475b;
+}
+
+a{
+    text-decoration: none;
+}
+
+.row_right>.small_button a{
+    color: #ff7a59;
+}
+
+.row_right i{
+    cursor: pointer;
+}
+
+.row_right>.big_button a,.title a,.card a, .row_main_left a, .row_second a{
+    color: #ffffff;
+}
+
+#arrow,button{
+    cursor: pointer;
+}
+
+
 .clearfix::after{
     content: '';
     display: table;
@@ -87,7 +163,7 @@ header .first{
     border-radius: 5px;
     border: none;
     background: #ff7a59;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .row_right i{
@@ -159,8 +235,9 @@ header .second{
 .line{
     width: 100%;
     height: 64px;
-    background-color: #AFEBE4;
-    border-top: 2px solid #33475B;
+    background-color: #0AA294;
+    border-top: 1.5px solid #33475B;
+    border-bottom: 1.5px solid #33475B;
     bottom: 0;
 }
 
@@ -189,13 +266,19 @@ header .second{
     background-color: #ff7a59;
     color: white;
 }
-                /* === FINE HEADER === */
+
+ /* ========================== FINE HEADER === */
+
+
+.row_main *, .row_main_third *, .row_main_second *, .row_main_right *, .container_row *{
+    color: #33475B;
+}
 
 main{
     background: #f5f8fa;
 }
 
-.row_main{
+.row_main{                     /* MAIN //-> row_main */                    
     text-align: center;
     height: 400px;
     overflow: hidden;
@@ -208,19 +291,20 @@ main{
 
 .row_main h2{
     font-size: 28px;
-}
+}   
 
 .row_main p{
     padding-top: 20px;
 }
 
 
-.row_main_second{
+.row_main_second{                /* MAIN //-> row_main_second */     
     background-color: #ffffff;
     height: 350px;
     width: 100%;
     border-radius: 8px;
     margin-top: 45px;
+    border: 1px solid #cbd6e2;;
 }
 
 .row_main_left{
@@ -273,10 +357,13 @@ main{
     list-style-type: none;
 }
 
-
-
+                            /* MAIN //-> row_main_third */ 
 .row_main_third{
     padding-top: 100px;
+}
+
+.row_main_third .card{
+    border: 1px solid #cbd6e2;;
 }
 
 .card{
@@ -356,14 +443,7 @@ main{
     margin: 30px auto;
 }
 
-
-
-
-
-
-
-
-
+                        /* MAIN //-> table  */ 
 
 .table{
     width: 100%;
@@ -388,9 +468,7 @@ main{
     font-size: 17px;
 }
 
-
-
-
+                        /* MAIN //-> container_mini_card  */ 
 .container_mini_card{
     margin-top: 80px;
 }
@@ -403,6 +481,10 @@ main{
     border-bottom: 1px solid;
     float: left;
     padding: 40px;
+}
+
+#card_bottom_last_second>div{
+    padding-top: 4px;
 }
 
 .number{
@@ -439,7 +521,7 @@ main{
 
 
 /* Fine tabella */
-
+                            /* MAIN //-> container_row */ 
 .container_row{
     clear: both;
     background: #F4F9FD;
@@ -511,50 +593,55 @@ main{
 }
 
 .row_second_col_first div>div{
-    line-height: 60px;
-    height: 60px;
     width: calc(100% / 4);
     line-height: 60px;
 }
 
 .row_second_col_first div>img{
     height: 15px;
-    margin-right: 27px;
-    padding-right: 26px;
 }
 
 .row_second_col_second img{
-    width: 200px;
-    margin-top: 20px;
+    width: 230px;
 }
 
-/* LOghi con dimensioni aumentate */
+/* Loghi con dimensioni aumentate */
 
 #small_logo_1 img{
     height: 20px;
 }
 
 #small_logo_2 img{
-    height: 30px;
+    height: 35px;
 }
 
 #small_logo_3 img{
-    height: 30px;
+    height: 36px;
+    margin-top: 12px;
 }
 
 #small_logo_4 img{
-    height: 41px;
+    height: 50px;
+    margin-top: 2px;
+}
+
+#small_logo_5 img{
+    height: 20px;
+    margin-top: 16px;
 }
 
 
-
-
+ /* ========================== FINE MAIN === */
 
 
 footer{
     height: 600px;
     background-color: #32495B;
     clear: both;
+}
+
+.footer_col li, #icon span> a,.footer_row_second ul li{
+    color: #cbd6e2;
 }
 
 .footer_col{
@@ -588,6 +675,11 @@ footer div > button {
     font-weight: 600
 }
 
+footer div> button a{
+    color: #33475b;
+}
+
+                         /* Footer_row_second */
 
 .footer_row_second{
     margin-top: 80px;
@@ -597,7 +689,6 @@ footer div > button {
     float: left;
     list-style-type: none;
     padding-left: 16px;
-    color: #ffffff;
     padding-bottom: 15px;
 }
 
@@ -647,7 +738,37 @@ footer div > button {
     padding-top: 22px;
 }
 
-#icon > span i{
+#icon > span > a > i{
     margin-right: 15px;
     font-size: 25px;
+}
+
+.footer_row_second hr+div>div{
+    color: #cbd6e2;
+}
+
+
+/* oggetto fissato messaggio */
+section + i {
+    position: fixed;
+    left: 93%;
+    bottom: 0;
+    margin-bottom: 30px;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #F4F9FD;
+    background-color: #33475b;
+    cursor: pointer;
+}
+
+
+/* oggetto fissato freccia in su */
+i + a > i{   
+    position: fixed;
+    bottom: 0;
+    right: 95%;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #ff7a59;
 }
