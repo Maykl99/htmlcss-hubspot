@@ -65,7 +65,41 @@ i+span:hover .hover{
 /* Fine evento fixed */
 
 
+footer+input{
+    position: fixed;
+    top: 0;
+    margin-top: 32px;
+    left: 60%;
+    height: 25px;
+    z-index: 4;
+    width: 90px;
+    border: 1px solid #00A4BD;
+    color: #00A4BD;;
+    /* display: none; */
+    border-radius: 5px;
+    padding: 10px;
+}
 
+footer+section:active{
+    background: tomato;
+    display: inline-block;
+}
+
+button:hover{
+    background-color: #00A4BD;
+}
+
+.title button:hover{
+    background-color: #00A4BD;
+}
+
+.row_right .big_button:hover{
+    background-color: #00A4BD;
+}
+
+.row_main_second .big_button:hover{
+    background-color: #00A4BD;
+}
 
 
 
