@@ -8,56 +8,81 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 
-/* body>.hover>div{
-    width: 100px;
-    position: absolute;
-    margin-top: 100px;
-    left: -999999999px;
-    display: inline-block;
-    background-color: #F4F9FD;
-    border-radius: 5px;
-    z-index: 1;
-    border: 1px solid #cbd6e2;
-}
+/* Inizio evento fixed */
 
-body>.hover>div>ul li{
-    list-style: none;
-    margin-top: 10px;
-    padding-left: 10px;
+body>div{
+    height: 100px;
+    width: 16px;
+    position: fixed;
+    left: 322px;
+    z-index: 3;
     cursor: pointer;
 }
 
-body>.hover>div>ul li:last-child{
-    padding-bottom: 10px;
+.hover>ul>li:hover{
+    background-color: #7c98b6;
+    color: white;
 }
 
-#triangolo{
-        width: 0; height: 0; line-height: 0;
-        border-bottom: 20px solid #F4F9FD;
-        border-left:   20px solid transparent;
-        border-right:  20px solid transparent;
-        position: absolute;
-        top: -20px;
-        left: 55px;
-}
-
-.hover>div:hover #arrow{
-    left: 250px;
-}
-
-section>#arrow{
-    width: 20px;
-    border: aqua;
-    position: absolute;
-    bottom: 32px; 
-    left: 306px;
-    top: 25px;
-    z-index: 3;
+body>div:hover .hover{
+    display: inline-block;
 }
 
 .hover{
-    overflow: hidden;
-} */
+    width: 100px;
+    color: #33475B;
+    position: fixed;
+    top: 80px;
+    left: 16.5%;
+    z-index: 1;
+    border: 1px solid #cbd6e2;
+    background-color: #F4F9FD;
+    border-radius: 4px;
+    display: none; 
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.hover > ul{
+    list-style-type: none;
+}
+
+.hover>ul>li{
+    padding: 8px;
+    over
+    
+}
+
+i+span:hover .hover{
+    display: inline-block;
+}
+
+.hover>ul>li>a{
+    color: #33475B;
+}
+
+
+/* Fine evento fixed */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 header *{
     color: #33475b;
