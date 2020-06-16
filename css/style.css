@@ -38,7 +38,7 @@ body>div:hover .hover{
     border: 1px solid #cbd6e2;
     background-color: #F4F9FD;
     border-radius: 4px;
-    display: none; 
+    display: none;
     line-height: 20px;
     cursor: pointer;
 }
@@ -53,7 +53,7 @@ body>div:hover .hover{
 
  i+span:hover .hover{
     display: inline-block;
-} 
+}
 
 .hover>ul>li>a{
     color: #33475B;
@@ -151,7 +151,7 @@ a{
     clear: both;
 }
 
-.container{  
+.container{
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
@@ -160,7 +160,7 @@ a{
 }
 
 header{
-    background-color: #FFF4EF; 
+    background-color: #FFF4EF;
     overflow: hidden;
 }
 
@@ -177,7 +177,7 @@ header .first{
     border: 1px solid #cbd6e2;
 }
 
-.row_left, .row_right{ 
+.row_left, .row_right{
     width: 50%;
     line-height: 80px;
     float: left;
@@ -239,7 +239,7 @@ header .first{
     padding: 10px;
     margin-left: 20px;
     padding-left: 25px;
-}       
+}
             /* Fine PARTE HEADER //-> SECTION FIRST BANNER */
 
 
@@ -339,7 +339,7 @@ main{
     background: #f5f8fa;
 }
 
-.row_main{                     /* MAIN //-> row_main */                    
+.row_main{                     /* MAIN //-> row_main */
     text-align: center;
     height: 400px;
     overflow: hidden;
@@ -352,14 +352,14 @@ main{
 
 .row_main h2{
     font-size: 28px;
-}   
+}
 
 .row_main p{
     padding-top: 20px;
 }
 
 
-.row_main_second{                /* MAIN //-> row_main_second */     
+.row_main_second{                /* MAIN //-> row_main_second */
     background-color: #ffffff;
     height: 350px;
     width: 100%;
@@ -418,7 +418,7 @@ main{
     list-style-type: none;
 }
 
-                            /* MAIN //-> row_main_third */ 
+                            /* MAIN //-> row_main_third */
 .row_main_third{
     padding-top: 100px;
 }
@@ -504,7 +504,7 @@ main{
     margin: 30px auto;
 }
 
-                        /* MAIN //-> table  */ 
+                        /* MAIN //-> table  */
 
 .table{
     width: 100%;
@@ -529,7 +529,7 @@ main{
     font-size: 17px;
 }
 
-                        /* MAIN //-> container_mini_card  */ 
+                        /* MAIN //-> container_mini_card  */
 .container_mini_card{
     margin-top: 80px;
 }
@@ -582,7 +582,7 @@ main{
 
 
 /* Fine tabella */
-                            /* MAIN //-> container_row */ 
+                            /* MAIN //-> container_row */
 .container_row{
     clear: both;
     background: #F4F9FD;
@@ -825,7 +825,7 @@ section + i {
 
 
 /* oggetto fissato freccia in su */
-i + a > i{   
+i + a > i{
     position: fixed;
     bottom: 0;
     right: 95%;
@@ -839,6 +839,18 @@ i + a > i{
     display: inline-block;
 }
 
+.container_menu_second:hover .menu_second{
+    display: inline-block;
+}
+
+.container_menu_third:hover .menu_third{
+    display: inline-block;
+}
+
+.container_menu_fourth:hover .menu_fourth{
+  display: inline-block;
+}
+
 
 .container_menu{
     height: 30px;
@@ -850,19 +862,128 @@ i + a > i{
     cursor: pointer;
 }
 
+.container_menu_second{
+    height: 40px;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    left: 71%;
+    margin-top: 120px;
+    cursor: pointer;
+}
+
+.container_menu_third{
+    height: 40px;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    left: 79%;
+    margin-top: 120px;
+    cursor: pointer;
+}
+
+.container_menu_fourth{
+    height: 40px;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    left: 85%;
+    margin-top: 120px;
+    cursor: pointer;
+}
+
 .menu{
-    width: 30%;
+    width: 580px;
+    height: 500px;
     border: 1px solid #cbd6e2;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 50%;
     background-color: #F4F9FD;
-    margin-top: 151px;
+    margin-top: 31px;
     z-index: 1;
     display: none;
     border-radius: 5px;
     padding: 10px;
 }
+
+.menu_second{
+    width: 800px;
+    background: #F4F9FD;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 31px;
+    border: 1px solid #cbd6e2;
+    z-index: 1;
+    display: none;
+}
+
+.menu_third{
+    width: 700px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 31px;
+    border: 1px solid #cbd6e2;
+    z-index: 1;
+    background-color: #F4F9FD;
+    cursor:pointer;
+    display: none;
+}
+
+.menu_fourth{
+    width: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 31px;
+    border: 1px solid #cbd6e2;
+    z-index: 1;
+    background-color: #F4F9FD;
+    cursor:pointer;
+    padding: 30px 0px 30px;
+    padding-left: 20px;
+    display: none;
+}
+
+.menu_fourth>div{
+    float: left;
+    width: calc(95% / 3);
+}
+
+.menu_fourth>div>h4{
+    padding-bottom: 10px;
+}
+
+.menu_fourth>div>ul>li{
+    padding-bottom: 10px;
+}
+
+.menu_fourth>div ul{
+    list-style-type: none;
+}
+
+.menu_second>div{
+    width: calc(95% / 3);
+    height: 120px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 15px;
+}
+
+.menu_second hr{
+    width: 95%;
+    margin: auto;
+}
+
+.menu_third>div{
+    width: 50%;
+    float: left;
+    padding: 30px;
+}
+
 
 /* footer div{
     height: 100px;
@@ -876,11 +997,17 @@ i + a > i{
 
 .logo_ul>li>#arrow:hover{
     color: #0AA294;
-    
+
 }
 
 .menu>div:hover{
     background-color: #7c98b6;
+    border-radius: 2px;
+}
+
+.menu_second>div:hover{
+    background-color: #7c98b6;
+    border-radius: 4px;
 }
 
 /* .menu> div *:hover{
@@ -903,13 +1030,23 @@ i + a > i{
 }
 
 .menu div:first-child{
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 .menu div:last-child{
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
-.menu + hr:first-child{
+.menu div>p:last-child{
+    padding: 5px;
+}
+
+.menu hr{
+    margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.menu div{
+    padding-bottom: 13px;
 }
