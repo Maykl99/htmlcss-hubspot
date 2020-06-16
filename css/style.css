@@ -8,6 +8,27 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* height: 500px; */
+    overflow: hidden;
+}
+
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+header{
+    background-color: #FFF4EF;
+    overflow: hidden;
+}
+
 /* Inizio evento fixed */
 
 body>div{
@@ -62,7 +83,6 @@ body>div:hover .hover{
 
 /* Fine evento fixed */
 
-
 footer+input{
     position: fixed;
     top: 0;
@@ -79,9 +99,7 @@ footer+input{
 }
 
 
-
-
-
+/* Evento bottoni cambia colore */
 
 button:hover{
     background-color: #00A4BD;
@@ -100,26 +118,6 @@ button:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 header *{
     color: #33475b;
 }
@@ -127,6 +125,7 @@ header *{
 a{
     text-decoration: none;
 }
+
 
 .row_right>.small_button a{
     color: #ff7a59;
@@ -142,26 +141,6 @@ a{
 
 #arrow,button{
     cursor: pointer;
-}
-
-
-.clearfix::after{
-    content: '';
-    display: table;
-    clear: both;
-}
-
-.container{
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    /* height: 500px; */
-    overflow: hidden;
-}
-
-header{
-    background-color: #FFF4EF;
-    overflow: hidden;
 }
 
 header .first{
@@ -701,6 +680,10 @@ footer{
     clear: both;
 }
 
+.footer_col ul>li:hover{
+    color: #609bda;
+}
+
 .footer_col li, #icon span> a,.footer_row_second ul li{
     color: #cbd6e2;
 }
@@ -711,6 +694,7 @@ footer{
     padding-right: 20px;
     color: #ffffff;
     line-height: 30px;
+    cursor: pointer;
 }
 
 .footer_col h5{
@@ -786,6 +770,11 @@ footer div> button a{
     margin-left: 20px;
 }
 
+.lingue>li:hover{
+    color: #609bda;
+    cursor: pointer;
+}
+
 .footer_row_second > div{
     text-align: center;
 }
@@ -802,6 +791,10 @@ footer div> button a{
 #icon > span > a > i{
     margin-right: 15px;
     font-size: 25px;
+}
+
+#icon>span>a:hover{
+    color: #609bda;
 }
 
 .footer_row_second hr+div>div{
@@ -834,7 +827,12 @@ i + a > i{
     color: #ff7a59;
 }
 
+section + i:hover .help{
+    display: inline-block;
+}
 
+
+/* MENU HOVER EVENTO */
 .container_menu:hover .menu{
     display: inline-block;
 }
@@ -984,35 +982,28 @@ i + a > i{
     padding: 30px;
 }
 
-
-/* footer div{
-    height: 100px;
-    width: 16px;
-    position: fixed;
-    left: 322px;
-    z-index: 3;
-    cursor: pointer;
-} */
-
-
 .logo_ul>li>#arrow:hover{
     color: #0AA294;
 
 }
 
 .menu>div:hover{
-    background-color: #7c98b6;
+    background-color: #c4d0dd;
     border-radius: 2px;
 }
 
 .menu_second>div:hover{
-    background-color: #7c98b6;
+    background-color: #c4d0dd;
     border-radius: 4px;
 }
 
-/* .menu> div *:hover{
-    color: white;
-} */
+.menu_third>div:hover{
+    background-color: #c4d0dd;
+}
+
+.menu_fourth>div *:hover{
+    color: #7c98b6;
+}
 
 .menu > div i{
     font-size: 20px;
@@ -1049,4 +1040,82 @@ i + a > i{
 
 .menu div{
     padding-bottom: 13px;
+}
+
+#info_policy>li:hover{
+    color: #609bda;
+    cursor: pointer;
+}
+
+/* Help footer oggetto fissato */
+
+.help{
+    width: 300px;
+    background-color: white;
+    position: fixed;
+    bottom: 15%;
+    left: 80%;
+    margin-right: 30px;
+    border-radius: 5px;
+    display: none;
+}
+
+#logo_help{
+    width: 100%;
+    background: #33475b;
+}
+
+#logo_help>img{
+    width: 15%;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+#logo_help div{
+    display: inline-block;
+    color: #ffff;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#logo_help + div{
+    width: 80%;
+    /* text-align: center; */
+    margin: auto;
+    color: #33475b;
+    padding-top: 20px;
+}
+
+.help div:last-child{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.letter{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.letter > div{
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.click_help{
+    position: fixed;
+    left: 93%;
+    bottom: 0;
+    margin-bottom: 30px;
+    /* font-size: 44px; */
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 66px;
+    height: 80px;
+}
+
+.click_help:hover .help{
+    display: inline-block;
 }
