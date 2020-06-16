@@ -49,13 +49,11 @@ body>div:hover .hover{
 
 .hover>ul>li{
     padding: 8px;
-    over
-    
 }
 
-i+span:hover .hover{
+ i+span:hover .hover{
     display: inline-block;
-}
+} 
 
 .hover>ul>li>a{
     color: #33475B;
@@ -80,10 +78,10 @@ footer+input{
     padding: 10px;
 }
 
-footer+section:active{
-    background: tomato;
-    display: inline-block;
-}
+
+
+
+
 
 button:hover{
     background-color: #00A4BD;
@@ -100,6 +98,10 @@ button:hover{
 .row_main_second .big_button:hover{
     background-color: #00A4BD;
 }
+
+
+
+
 
 
 
@@ -831,3 +833,57 @@ i + a > i{
     font-size: 40px;
     color: #ff7a59;
 }
+
+
+.container_menu:hover .menu{
+    display: inline-block;
+}
+
+
+.container_menu{
+    height: 30px;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    left: 57%;
+    margin-top: 120px;
+    cursor: pointer;
+}
+
+.menu{
+    width: 30%;
+    border: 1px solid #cbd6e2;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    background-color: #F4F9FD;
+    margin-top: 151px;
+    z-index: 1;
+    /* display: none;  */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* footer div{
+    height: 100px;
+    width: 16px;
+    position: fixed;
+    left: 322px;
+    z-index: 3;
+    cursor: pointer;
+} */
+
+
+.logo_ul>li>#arrow:hover{
+    color: #0AA294;
+    
+}
+
+.menu>div:hover{
+    background-color: #7c98b6;
+}
+
+/* .menu> div *:hover{
+    color: white;
+} */
+
